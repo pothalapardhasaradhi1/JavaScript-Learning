@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+        
+        document.getElementById("n1").innerHTML="Hello Python";
+        }
+    </script>
+</head>
+<body>
+    <h3 style="color:red;background-color: black;border-radius: 3px solid gray;"><center>Where to write scripting tags</center></h3>
+<ul style=list-style-type:square>
+    <li>Head tag</li>
+    <li>Body tag</li>
+    <li>External Tag</li>
+</ul>
+<p id="n1">This will demonstrate head tag </p>
+<button type="button" onclick="myFun()">c1</button>
+<br><br>
+
+<script>
+    function changeCss(){
+        document.getElementById("o").style.fontSize="50px";
+
+        
+    }
+</script>
+
+<button type="button" onclick="changeCss()">S1</button>
+<br>
+<br>
+
+
+<h5 id="o">External Javascript</h5>
+<p id="z1">This is helps to understanding the external js </p>
+
+<srcipt src="external.js"></srcipt>
+<button type="button" onclick="fun()">c7</button>
+</body>
+</html>
