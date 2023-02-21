@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+   <h1 style="text-align: center;color:aqua;background-color: blueviolet;border-radius: 5px;">Identifiers</h1> 
+   <ul style="list-style-type: disc;">
+<li><b>Identifiers</b> are nothing but names of variables,functions,constants</li>
+<br>
+<b><u>Rules:</u></b>
+<br><br>
+<li>Identifiers should contains alphabet,numbers,dollar sign,underscore</li>
+<li>It should be start with alphabet or underscore</li>
+<li>It should not be start with number and dollar sign</li>
+<li>It should not contain any special characters except dollar sign and underscore</li>
+<li>Identifier name should not be any keyword</li>
+<li>It is a case sensitive</li></ul>
+<br>
+<br>
+<h3 style="text-align:center;color:red;background-color: brown;border:2px dotted yellowgreen">Variables</h3>
+<ol type="A">
+    <li>Variables are used to store data</li>
+    <li>In javascript we have two keywords to define variables<ul><li>Var</li><li>Let</li></ul></li>
+<br>
+<b><u>Var:</u></b>
+<br><br>
+<li><b>var</b> is a keyword to define varibles in javascript</li>
+<li>Var keyword allows redeclaration as well as re intialaization variable</li>
+<li>It is functional scope of data</li>
+<br>
+<br>
+<b><u>Let:</u></b>
+<br><br>
+<li>It is a keyword to define variables in js</li>
+<li>it allows reassignment bit does not allows redeclaration</li>
+</ol>
+<br>
+<br>
+<script>
+{
+    var a,b,c;
+    a=10;
+    b=20;
+    c=30;
+    res=a+b+c;
+    document.write("Addition of 3 numbers is ",res);
+
+}
+</script>
+<h1>Demonstration of variable declaration and intialaization</h1>
+<br>
+<br>
+<script>
+    function add(a,b){
+        var a,b;
+        return a+b;
+    }
+    document.write(add(10,40));
+</script>
+<br>
+<br>
+<h3>Click the button tag to get addition of 2 numbers</h3>
+<script>
+function myFun(){
+    var a,b;
+    a=10;
+    b=20;
+    document.write(a+b);
+}
+</script>
+<button type="button" onclick="myFun()">Add</button>
+<br>
+<br>
+<h3>Let example</h3>
+
+</body>
+</html>

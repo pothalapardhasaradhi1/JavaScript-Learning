@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>Functions</center></h1>
+    <ul>
+<b><u>Functions: </u></b>are used to write code once and execute any number of times
+    <li>We have two types of functions<ol type="i">
+        <li>Buit In Functions</li>
+        <li>User Defined Functions</li>
+    </ol></li>
+    </ul>
+    <b><u>User Defined Functions:</u></b>
+    <ul style="list-style-type: disc;"><li>A udf should be start with keyword called function and with functions name ends with paranthesis</li>
+    <li>whenever we call the function then only execute block of of code</li></ul>
+    <br>
+    <br>
+    <h3>Different ways to Implement functions in JS</h3>
+    <script>
+      function add(a,b){
+        document.write(a+b);
+      } 
+      
+      var a,b;
+      a=10;
+      b=20;
+      add(a,b); 
+    </script>
+    <br>
+    <br>
+    <h1>Anothere way</h1>
+    <script>
+        function add(){
+            var x,y;
+            x=10;
+            y=55;
+            return x+y;
+        }
+        document.write("Addition of two numbers is ",add);
+        document.write("<br>Addition of two numbers is " ,add());
+    </script>
+    <br>
+    <br>
+    <h3>Anothere way to implement functions in js</h3>
+    <script>
+        function myFun(a,b){
+            return a+b;
+        }
+        var a,b,res;
+        a=66;
+        b=778;
+        res=myFun(a,b);
+        document.write(res)
+    </script>
+</body>
+</html
