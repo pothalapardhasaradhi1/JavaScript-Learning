@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pg(){
+           document.getElementById("p").value=document.getElementById("b").value/document.getElementById("a").value*100;
+        var p1=document.getElementById("p").value;
+        var gr;
+        switch(Math.floor(p1/10)){
+            case 9:
+            case 8:gr="A+";
+                   break;
+            case 7:gr="A";
+                   break;
+            case 6: gr="B";
+                    break;
+            case 5:gr="C";
+                    break;
+            case 4:gr="D";
+                    break;
+
+            default:gr="F";
+                    break;
+                   
+
+        }
+document.getElementById("g").value=gr;
+        }
+    </script>
+</head>
+<body>
+    <h1>Switch Statement</h1>
+    <marquee>It is multi selected statement</marquee>
+    <br><br>
+    <h1>Percentage & Grade Caluclator</h1>
+    Max MArks:<input type="text" id="a">
+    <br><br>
+    Obatained Marks:<input type="text" id="b"><br><br>
+    <button type="buttn" onclick="pg()">submit</button>
+    <br><br>
+    Percentage:<input type="text" id="p">
+    <br><br>
+    Grade:<input type="text" id="g">
+</body>
+</html>
