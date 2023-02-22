@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 style="text-align: center;color:brown;background-color: beige;">Conditions</h1> 
+  <ol type="A">
+    <li>Simple if statement</li>
+    <li>if else statement</li>
+    <li>else if ladder statement</li>
+
+  </ol> 
+  <br>
+  <br>
+  
+  <h3><u>Simple if statement:</u></h3>
+  <h5>Check whether you eligible for voting or not</h5>
+  <script>
+function age(){
+    if (document.getElementById("t1").value>=18){
+        document.write("Eligible for voting")
+    }
+}
+  </script>
+  <h1>Enter Your Age:</h1><input type="text" id="t1">
+  <button type="button" onclick="age()">Check</button>
+  <br>
+  <br>
+  <h3><u>if else statement</u></h3>
+  <h5>Check even number or odd</h5>
+  <script>
+    function even(){
+        if (document.getElementById("t2").value%2==0){
+            window.alert("Even number")
+        }
+        else{
+            window.alert("Odd number")
+        }
+    }
+  </script>
+  <h1>Enter the number:</h1>
+  <input type="text" id="t2">
+  <button type="button" onclick="even()">Check whether the number is even or odd</button>
+  <br><br>
+  <h3><u>else if ladder statement</u></h3>
+  <h5>Check whether the number is positive or negative or zero</h5>
+  <script>
+    function checkNum(){
+        if (document.getElementById("t3").value>0){
+            document.write("Positive number")
+        }
+        else if(document.getElementById("t3").value==0){
+            document.write("Zero")
+        }
+        else{
+            document.write("Negative number")
+        }
+    }
+  </script>
+  <h1>Enter the number:</h1>
+  <input type="text" id="t3">
+  <button type="button" onclick="checkNum()">check whethe the number is p or n or z</button>
+  <br>
+  <br>
+  <br>
+  
+</body>
+</html>
