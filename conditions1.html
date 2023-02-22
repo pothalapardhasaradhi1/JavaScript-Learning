@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+            if(document.getElementById("p1").value==(document.getElementById("p2").value)){
+                window.alert("Equal");
+            }
+            else if(document.getElementById("p1").value>(document.getElementById("p2"))){
+                window.alert("first number is greater than second number")
+            }
+            else{
+                window.alert("second number is greater than first number")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color:bisque;background-color: brown;text-align: center;">Relation ship between two numbers</h1>
+<h3>Enter the first number:</h3>
+<input type="text" id="p1"><br>
+<h3>Enter the second number:</h3>
+<input type="text" id="p2">
+<button type="button" onclick="myFun()">check</button>
+</body>
+</html>
