@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Writing and reading Arrays</h1>
+    <script>
+        var a=[1,2,3,6,9,10];
+        document.write(a.length);
+        document.write("0 Index value is:",a[0]);
+        document.write("Inde out of range is considered as undefined   ",a[16]);
+        a.push('fghjk',);
+        document.write(a);
+        a.pop()
+        document.write(a);
+        a.shift();
+        document.write(a);
+        a.unshift("ashish","pardhu");
+        document.write(a);
+        a[0]="pspk";
+        document.write(a);
+        a[20]="sanju";
+        document.write(a);
+        document.write("\n All aboutarray operations")
+    </script>
+</body>
+</html>

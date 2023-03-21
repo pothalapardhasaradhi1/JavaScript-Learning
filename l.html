@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic Javascript programmes using map </h1>
+    <script>
+        var a=["pavan","pardhu","ashish","hemanth"];
+        var b=a.map(function (ps){
+document.write("\n",ps.toUpperCase());
+        });
+        //square of a numbers
+        var p=[1,2,3,4,5,6,7];
+        var b=p.map(function(s){
+            document.write("\n",s*s);
+        });
+        //
+        //
+        function myFun(a,b){
+            if(isNaN(a) || isNaN(b)){
+                document.write("Invalid arguments you gave");
+            }
+            var p=a*b;
+            document.write("\n" ,p);
+        }
+        myFun(10,2);
+        myFun("10","20");
+        myFun("pardhu","Pavan");
+    </script>
+</body>
+</html>
